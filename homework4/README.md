@@ -262,3 +262,6 @@ git diff main...developGitBranch
 2. [How Git Works — ByteByteGo](https://bytebytego.com/guides/how-does-git-work/)
 3. [GitHub Docs：Pull request quickstart](https://docs.github.com/en/pull-requests/get-started/quickstart-for-pull-requests)
 4. [GitHub Docs：About pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+
+
+AI使用:https://chatgpt.com/s/cx_6abf5c2389808191a3354a40eb8bb27e
