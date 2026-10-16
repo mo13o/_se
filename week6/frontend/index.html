@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Docker 微服務展示</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <span class="eyebrow">CONTAINER LAB</span>
+      <h1>Docker 微服務展示系統</h1>
+      <p>Nginx → Flask API → PostgreSQL</p>
+    </header>
+
+    <section class="services" aria-label="服務狀態">
+      <article><strong>Nginx</strong><span>Web Server / Reverse Proxy</span></article>
+      <article><strong>Python</strong><span>Flask REST API</span></article>
+      <article><strong>PostgreSQL</strong><span>Persistent Database</span></article>
+    </section>
+
+    <section class="panel">
+      <div class="panel-title">
+        <div>
+          <h2>留言板</h2>
+          <p>送出的內容會經由反向代理寫入資料庫。</p>
+        </div>
+        <span id="status" class="status">連線中</span>
+      </div>
+
+      <form id="message-form">
+        <input id="message-input" maxlength="200" placeholder="輸入一則訊息……" required>
+        <button type="submit">送出</button>
+      </form>
+      <p id="error" class="error" role="alert"></p>
+      <ul id="message-list" class="message-list"></ul>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS messages (
+    id SERIAL PRIMARY KEY,
+    content VARCHAR(200) NOT NULL,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO messages (content)
+SELECT 'Hello Docker！這筆資料來自 PostgreSQL。'
+WHERE NOT EXISTS (SELECT 1 FROM messages);
