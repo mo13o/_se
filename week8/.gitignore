@@ -1,0 +1,17 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.db
+frontend/node_modules/
+frontend/dist/
+
+backend/.packages/
+frontend/*.tsbuildinfo
+backend/.pytest-tmp/
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
+backend/migration-report.json
+backend/*.backup-*.db
