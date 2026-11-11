@@ -1,0 +1,19 @@
+{
+  "name": "island-university-portal-tests",
+  "version": "1.1.0",
+  "private": true,
+  "description": "校務系統與單元、系統及 E2E 測試",
+  "scripts": {
+    "start": "node server.js",
+    "test": "npm run test:unit && npm run test:system && npm run test:e2e",
+    "test:unit": "node --test tests/unit/*.test.js",
+    "test:system": "node --test tests/system/*.test.js",
+    "test:e2e": "playwright test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.0"
+  }
+}
