@@ -1,0 +1,42 @@
+{
+  "name": "create-booknest-cloudflare",
+  "version": "1.0.0",
+  "description": "使用一個指令建立 BookNest Cloudflare Workers + D1 線上書店專案",
+  "type": "module",
+  "bin": {
+    "create-booknest-cloudflare": "./bin/create-booknest.js"
+  },
+  "files": [
+    "bin/",
+    "template/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "node --check bin/create-booknest.js",
+    "test": "node --test test/*.test.js",
+    "pack:check": "npm pack --dry-run"
+  },
+  "keywords": [
+    "cloudflare",
+    "workers",
+    "d1",
+    "bookstore",
+    "starter",
+    "cli"
+  ],
+  "author": "Daisy Huang",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mo13o/_se.git",
+    "directory": "week9/npm-package"
+  },
+  "bugs": {
+    "url": "https://github.com/mo13o/_se/issues"
+  },
+  "homepage": "https://booknest.daisyhuang1224.workers.dev",
+  "engines": {
+    "node": ">=18"
+  }
+}

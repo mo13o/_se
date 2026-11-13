@@ -1,0 +1,19 @@
+{
+  "name": "booknest-cloudflare-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BookNest 線上書店管理系統（Cloudflare Workers + D1）",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:create": "wrangler d1 create booknest-db --location apac --binding DB --update-config",
+    "db:migrate:local": "wrangler d1 migrations apply booknest-db --local",
+    "db:migrate:remote": "wrangler d1 migrations apply booknest-db --remote",
+    "db:check:local": "wrangler d1 execute booknest-db --local --command \"SELECT COUNT(*) AS book_count FROM books; SELECT COUNT(*) AS category_count FROM categories;\"",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "wrangler": "^4.47.0"
+  }
+}
